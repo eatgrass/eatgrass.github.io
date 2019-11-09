@@ -9,14 +9,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@3/dist/inspector.css">
     <meta name="description" content="import {Runtime, Inspector} from &quot;https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js&quot;;                 import define from &quot;https://api.obse">
 <meta property="og:type" content="article">
-<meta property="og:title" content="note_test">
-<meta property="og:url" content="http://yoursite.com/2019/11/08/note-test/index.html">
+<meta property="og:title" content="CPU 火焰图">
+<meta property="og:url" content="http://yoursite.com/2019/11/08/cpu-flame-graph/index.html">
 <meta property="og:site_name" content="Jing&#39;s Blog">
 <meta property="og:description" content="import {Runtime, Inspector} from &quot;https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js&quot;;                 import define from &quot;https://api.obse">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-09T02:26:42.391Z">
+<meta property="og:updated_time" content="2019-11-09T10:33:15.479Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="note_test">
+<meta name="twitter:title" content="CPU 火焰图">
 <meta name="twitter:description" content="import {Runtime, Inspector} from &quot;https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js&quot;;                 import define from &quot;https://api.obse">
     
     
@@ -37,7 +37,7 @@
         
     
     <!-- title -->
-    <title>note_test</title>
+    <title>CPU 火焰图</title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- persian styles -->
@@ -85,16 +85,16 @@
     <br>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/11/08/note-test/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/11/08/note-test/&text=note_test"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/11/08/note-test/&is_video=false&description=note_test"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=note_test&body=Check out this article: http://yoursite.com/2019/11/08/note-test/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/11/08/note-test/&name=note_test&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/11/08/cpu-flame-graph/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&text=CPU 火焰图"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&is_video=false&description=CPU 火焰图"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CPU 火焰图&body=Check out this article: http://yoursite.com/2019/11/08/cpu-flame-graph/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&name=CPU 火焰图&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -111,7 +111,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        note_test
+        CPU 火焰图
     </h1>
 
 
@@ -139,12 +139,12 @@
 
   <div class="content" itemprop="articleBody">
     
-            <div id="note_32889247"></div>
+            <div id="note_2042183714"></div>
             <script type="module">
                 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-                import define from "https://api.observablehq.com/@eatgrass/untitled.js?v=3";
+                import define from "https://api.observablehq.com/@eatgrass/untitled/2.js?v=3";
                 const runtime = new Runtime();
-                const main = runtime.module(define, Inspector.into(document.querySelector('#note_32889247')));
+                const main = runtime.module(define, Inspector.into(document.querySelector('#note_2042183714')));
             </script>
   </div>
 </article>
@@ -173,16 +173,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/11/08/note-test/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/11/08/note-test/&text=note_test"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/11/08/note-test/&is_video=false&description=note_test"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=note_test&body=Check out this article: http://yoursite.com/2019/11/08/note-test/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/11/08/note-test/&title=note_test"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/11/08/note-test/&name=note_test&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/11/08/cpu-flame-graph/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&text=CPU 火焰图"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&is_video=false&description=CPU 火焰图"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CPU 火焰图&body=Check out this article: http://yoursite.com/2019/11/08/cpu-flame-graph/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&title=CPU 火焰图"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/11/08/cpu-flame-graph/&name=CPU 火焰图&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>

@@ -1089,6 +1089,10 @@ article .content video {
   max-width: 100%;
   height: auto;
 }
+article .content .observablehq--inspect {
+  overflow-x: hidden !important;
+  text-overflow: ellipsis !important;
+}
 article .content .video-container {
   position: relative;
   overflow: hidden;
