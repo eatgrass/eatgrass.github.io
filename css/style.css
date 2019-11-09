@@ -1221,6 +1221,7 @@ article .content .caption {
   margin-top: 4rem;
 }
 #footer {
+  position: fixed;
   bottom: 0;
   margin-bottom: 10px;
   width: 100%;
